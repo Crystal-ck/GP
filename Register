@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Form</title>
+	<!--custome css file link-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+
+<div class="form-container"> 
+	<form action="" method="post">
+		<h3>Register :)</h3>
+
+<?php
+
+if(isset($error)){
+	foreach ($error as $error ){
+		echo '<span class="error-msg">'.$error.'</span>';
+
+		
+	};
+
+};
+
+?>
+
+    <input type="text" name="name" required placeholder="Enter your name">		
+
+    <input type="email" name="email" required placeholder="Enter your email">		
+    <input type="password" name="password" required placeholder="Enter your password">	
+     <input type="password" name="cpassword" required placeholder="Confirm your password">	
+     <select name="user_type">
+
+     	<option value="user">User</option>
+     	<option value="admin">Admin</option>
+
+     </select>
+
+     <input type="submit" name="submit" value="Register" class="form-btn">
+
+<p>Already have an account ?<a href="login_form.php">Login here</a> </p>
+    
+
+
+
+	</form>
+
+</div>
+
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register Form</title>
+  <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+
+  <div class="box">
+    <div class="container">
+    
+           
+           <form action="" name="Formfill">
+
+            <h2>Register :) </h2>
+<?php
+
+if(isset($error)){
+  foreach ($error as $error ){
+    echo '<span class="error-msg">'.$error.'</span>';
+
+    
+  };
+
+};
+
+?>
+
+            <div class="input-field">
+
+                 <input type="text" name="name" class="input" required placeholder="Enter your name">
+                 <i class="bx bx-user"></i>
+              </div>
+
+              <div class="input-field">
+
+                 <input type="email" name="email" class="input" required placeholder="Enter your email">
+                 <i class="bx bx-user"></i>
+              </div>
+
+              <div class="input-field">
+
+                 <input type="password" name="password" class="input" required placeholder="Enter your password">
+                 <i class="bx bx-lock-alt"></i>
+              </div>
+
+              <div class="input-field">
+
+                 <input type="password" name="cpassword" class="input" required placeholder="Confirm password">
+                 <i class="bx bx-lock-alt"></i>
+              </div> 
+
+            <div class="input-field">
+
+              <select name="user_type" class="inputs">
+                <option value="User">User</option>
+                <option value="Admin">Admin</option>
+                <i class="select"></i>
+              </select>
+              </div>
+
+              <div class="input-field">
+                <input type="submit" name="submit" class="submit" value="Register">
+              </div>
+
+              <div class="bottom">
+
+               Already have an account ?<a href="">Login here</a> 
+                
+                
+
+              </div>
+
+
+
+           </form>
+
+
+
+
+    </div>
+
+
+
+
+
+  </div>
+
+</body>
+</html>
